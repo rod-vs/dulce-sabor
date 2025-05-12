@@ -1,20 +1,179 @@
-/* estilos.css - Estilos base para Dulce Sabor */
-
+/* Estilos generales para el cuerpo de la página */
 body {
-    background-color: #fff8f0;
+    background-color: #f5f5f0; /* Fondo beige suave */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    color: #4b2e2e;
+    color: #4b2e2e; /* Color marrón para el texto */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
 }
 
+/* Contenedor principal */
 .container {
-    width: 900px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco para el contenedor */
+    border: 3px solid #f8bbd0; /* Borde rosado suave */
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
-header, footer {
-    background-color: #f4d3c2;
-    padding: 1em;
-    margin-bottom: 1em;
+/* Estilos para el header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #f06292; /* Título rosado */
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 150px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Estilo para la barra de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #f06292; /* Enlaces rosados */
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de los títulos en todas las páginas */
+h2 {
+    font-size: 2rem;
+    color: #f06292;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para las secciones en el main */
+main {
+    margin-bottom: 30px;
+}
+
+/* Estilos generales para las imágenes */
+.producto-img {
+    width: 100%; /* Las imágenes ocuparán el 100% del contenedor */
+    max-width: 250px; /* Limitar el tamaño máximo de las imágenes */
+    margin: 0 auto; /* Esto centra las imágenes */
+    display: block;
+    border-radius: 5px;
+}
+
+/* Estilo para las secciones de la tienda */
+.productos {
+    display: flex;
+    flex-direction: column; /* Alineación vertical de productos */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilo para cada producto en la tienda */
+.producto {
+    width: 100%;
+    max-width: 250px; /* Limitar tamaño de los cuadros de producto */
+    border: 2px solid #f8bbd0; /* Borde rosado suave */
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    margin: 0 auto; /* Centrar cada producto */
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4d3c2; /* Fondo rosado suave */
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #4b2e2e; /* Color marrón */
+    border-top: 2px solid #f8bbd0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos para el formulario de contacto */
+.formulario-contacto {
+    margin-top: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Formulario en disposición vertical */
+    gap: 15px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-box input,
+.input-box select,
+.input-box textarea {
+    padding: 10px;
+    border: 2px solid #f8bbd0; /* Borde rosado suave */
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #4b2e2e;
+    background-color: #fff;
+}
+
+.input-box textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #f06292; /* Botón rosado */
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #f48fb1; /* Color más claro para el hover */
+}
+
+/* Estilos para los enlaces dentro del formulario */
+.contact-form label a {
+    color: #f06292;
+    text-decoration: none;
+}
+
+.contact-form label a:hover {
+    text-decoration: underline;
 }
